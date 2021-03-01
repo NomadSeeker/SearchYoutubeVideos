@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import App from './App';
+
 
 const SearchBar = ({onFormSubmit})=>{
 
@@ -17,7 +17,7 @@ const SearchBar = ({onFormSubmit})=>{
             <form onSubmit={onSubmit} className="ui form">
 
                 <div className="field">
-                    <label>Video Search</label>
+                    <label>Search For A Video</label>
                     <input value={term} onChange={(event)=>setTerm(event.target.value)} type="text"/>
                 </div>
 
